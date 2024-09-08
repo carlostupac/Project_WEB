@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registrarse</title>
+        <style>
+            body {
+                background-color:#EDEDED;
+                margin: 0%;
+                padding: 0%;
+            }
+            header {        
+                width: 100%;
+                border: none;
+                background-color: white;
+                margin-bottom: 2.5%;
+                
+            }
+            .box2 {
+                /* Producto */
+                width: 55%;
+                float: left;
+                border: none;
+                background-color: white;
+                margin-left: 1.5%;
+                padding-left: 10px;
+                padding-bottom: 15px;
+            }
+            .box2_1 {
+                /* Producto */
+                float: left; 
+                border-style: none; 
+                margin: 0%;
+            }
+            .box2_2 {
+                /* Producto */
+                float: left; 
+                border-style: none; 
+                margin: 0%;
+                width: 70%;
+            }
+
+
+            .box3 {
+                /* Resumen */
+                width: 40%;
+                float: left;
+                border: none;
+                margin-left: 15px;                    
+            }
+            .box4 {
+                /* Resumen 1er div*/
+                background-color: white;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-bottom: 0.5px;
+            }
+            .box5 {
+                /* Resumen 2do div*/
+                background-color: white;
+                padding-left: 10px;
+                padding-right: 10px;
+                margin-top: 15px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+            }
+            footer {
+                margin-top: 45%;
+                width: 100%;
+                height: 50px;
+                border: none;
+                background-color: rgb(209, 196, 196);
+            }
+            h1 {
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size:large;
+                margin: 0%;
+                padding-top: 7px;
+                padding-bottom: 7px;
+            }
+            h2 {
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                margin: 0%;
+                padding-top: 7px;
+                padding-bottom: 7px;
+            }
+            p {
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                margin-top: 5px;
+                margin-left: 5px;
+            }
+            .input {
+                background-color: #FF5E62;
+                color: white;
+                border: none;
+                cursor: pointer;
+                width: 100%;
+                border-radius: 20px;
+                font-weight: bold;
+                height: 35px;
+
+            }
+            .barra-superior {
+                background: linear-gradient(to right, #FF5E62, #FF9966);
+                color: white;
+                padding: 10px 20px;
+                display: flex;
+                justify-content: space-between;
+                font-size: 14px;
+            }
+
+        </style>
+    </head>
+
+    
+    
+    <body>     
+        <header>
+            <div class="barra-superior">
+                <div>
+                    <span>+54 9 11 2338-4312</span> | 
+                    <span>beersebaonline@gmail.com</span>
+                </div>
+                <div>
+                    VENTA MAYORISTA TALLES ESPECIALES
+                </div>
+            </div>
+            <div style="padding-left: 30%; padding-top: 1.5%"><img src="LOGO_BEERSEBA-removebg-preview.png" alt="logo" width="200"></div>
+        </header>
+        
+        <div class="box2">  
+            <h1>Producto1</h1>
+            <div class="box2_1">
+                <img src="S402049acdc5c4c61aa18de7c6db428e4W.avif" alt="compra" width="130">
+            </div>            
+
+            <div class="box2_2">
+                <p>Descripcion del producto</p>
+                <p style="font-weight: bold;">US $12.79 
+                    <span style="float: right; font-weight: 100; font-size: small;">
+                        <select style="width: 80px; ">
+                            <option value="0" disabled selected>Cantidad</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                        </select>
+                        
+                    </span>
+                </p>
+            </div>
+                
+                            
+        </div>
+
+        <div class="box3">
+
+            <div class="box4">
+                <h2>Resumen </h2>
+                <p>Subtotal  <span style="float: right;">US $12.79</span></p>
+                <p>Código promocional<span style="float: right;">Escribe aqui</span></p>
+                <p>Gastos de envío<span style="float: right;"> Gratis</span></p>
+                <p style="font-weight:bold;">Total<span style="float: right; font-size: x-large;">US $12.79</span></p>
+                
+                <input type="button" value="Realizar pedido" class="input">
+                <p style="font-size:small; color: rgb(164, 167, 170); text-align: center;"> Al hacer click en 'Realizar pedido', confirmo haber leído y aceptado los <span style="color: blue;">términos y condiciones.</span></p>
+            </div>
+                
+            <div class="box5">
+                <p style="color: rgb(164, 167, 170);">Beerseba mantiene seguros tu información y tu pago</p>
+            </div>
+            
+        </div>
+
+        <footer>
+            <p>Informacion importante</p>
+        </footer>
+
+    </body>
+</html>

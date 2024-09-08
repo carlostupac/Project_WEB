@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <title>Registrarse</title>
+        <style>
+            body {
+                background-color:#EDEDED;
+                margin: 0%;
+                padding: 0%;
+            }
+            header {        
+                width: 100%;
+                border: none;
+                background-color: white;
+                margin-bottom: 2.5%;
+            }     
+            .box2 {
+                /*registrarse*/
+                margin: 1%;
+                font-weight: lighter;
+                width: 20%;
+                border: none;
+                color: white;
+                background-color: #FF9966;
+                cursor: pointer;
+                border-radius: 4px;
+                font-weight: bold;
+                height: 35px;
+            }
+            .box3 {
+                margin-left: 1.5%;
+                margin-right: 20%;
+                padding: 2%;
+                border-color: black;
+                border-style: double;
+                text-align: left;
+                background-color: white;
+                border: none;
+                font-size: small;
+            }
+            h3 {
+                font-weight: bold;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            p {
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                margin-top: 5px;
+                margin-left: 5px;
+            }     
+            .barra-superior {
+                background: linear-gradient(to right, #FF5E62, #FF9966);
+                color: white;
+                padding: 10px 20px;
+                display: flex;
+                justify-content: space-between;
+                font-size: 14px;
+            }       
+
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <div class="barra-superior">
+                <div>
+                    <span>+54 9 11 2338-4312</span> | 
+                    <span>beersebaonline@gmail.com</span>
+                </div>
+                <div>
+                    VENTA MAYORISTA TALLES ESPECIALES
+                </div>
+            </div>
+            <div style="padding-left: 30%; padding-top: 1.5%"><img src="LOGO_BEERSEBA-removebg-preview.png" alt="logo" width="200"></div>
+            
+     
+        </header>
+        
+        <form class="box3" action="prueba.php" method="get"">
+            <h3>Inicia sesión o regístrate para comprar</h3><br>
+
+            <label for="cor01" class="box1">Email:</label><br>
+            <input class="w3-input" type="email" placeholder="Ingresa tu email.."><br>
+
+            <label for="nom01" class="box1">Nombre:</label><br>
+            <input class="w3-input" type="text" placeholder="Ingresa tu nombre.."><br>
+
+            <label for="ape01" class="box1">Apellido:</label><br>
+            <input class="w3-input" type="text" placeholder="Ingresa tu apellido.."><br>
+
+            <label class="box1">Tipo de documento:</label><br>
+            <select class="w3-input" class="box1" title="Seleccione...">
+                <option value="0" disabled selected>Seleccionar..</option>
+                <option value="DNI">DNI</option>
+                <option value="CARNET">Carnet</option>
+            </select><br>
+
+            <label class="box1">N° de documento:</label><br>
+            <input class="w3-input" type="text" placeholder="Ingresa tu DNI.."><br>
+
+            <label class="box1">Celular:</label><br>
+            <input class="w3-input" type="text" placeholder="Ingresa celular.."><br>
+
+            <label class="box1">Clave:</label><br>
+            <input class="w3-input" type="password" placeholder="Ingresa clave.."/><br>
+
+            <input class="box4" type="checkbox"/>
+            <label class="box4" style="color: #aaa2a2;">Acepto los términos y condiciones de "Beerseba" y autorizo la política de privacidad.</label><br><br>
+
+            <input type="submit" class="box2" value="Registrarme">
+        </form>
+    </body>
+</html>
