@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Admin.css">
+    <title>Admin Homepage</title>
+</head>
+
+<body>
+
+
+<!--MENUUU-->
+<div class="topnav" id="myTopnav">
+    <a href="C:\Users\Vanesa\Desktop\Beerseba\Admin.html" class="active" > Home </a>
+    <a href="C:\Users\Vanesa\Desktop\Beerseba\new_product.html" > Crear Producto </a>
+    <a href="C:\Users\Vanesa\Desktop\Beerseba\pedidos.html" > Pedidos Pendiente </a>
+    <a href="C:\Users\Vanesa\Desktop\Beerseba\homepage (1).html" class="Live"> Go Live </a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
+
+
+<div style="padding-left:16px">
+    <h1> Productos. </h1>
+    <hr>
+</div>
+
+
+
+
+<div class="lista-productos">
+    <div class="producto">
+        <img src="C:\Users\Vanesa\Documents\Programacion Web (2do Cuatri)\01-02 HTML y CSS\01html\Beerseba\Remera Estampada.jpg" alt="Remera de Morley" class="miniatura">
+        <h4>Remera de Morley </h4>
+        <button class="boton-editar">Editar</button>
+    </div>
+
+    <div class="producto">
+        <img src="C:\Users\Vanesa\Documents\Programacion Web (2do Cuatri)\01-02 HTML y CSS\01html\Beerseba\Pantalon Cuerina.jpg" alt="Pantalon negro de Cuerina" class="miniatura">
+        <h4>Pantalon Cuerina</h4>
+        <button class="boton-editar">Editar</button>
+    </div>
+
+    <div class="producto">
+        <img src="C:\Users\Vanesa\Documents\Programacion Web (2do Cuatri)\01-02 HTML y CSS\01html\Beerseba\Recto de Bengalina .jpg" alt="Recto de Bangalina" class="miniatura">
+        <h4>Recto de Bangalina</h4>
+        <a href=""><button class="boton-editar">Editar</button></a>
+    </div>
+
+    <div class="producto">
+        <img src="C:\Users\Vanesa\Documents\Programacion Web (2do Cuatri)\01-02 HTML y CSS\01html\Beerseba\estampada.JPG" alt="Blusa de Lino" class="miniatura">        
+        <h4>Blusa de Lino</h4>
+        <a href=""><button class="boton-editar">Editar</button></a>
+    </div>
+
+    <div class="producto">
+        <img src="C:\Users\Vanesa\Documents\Programacion Web (2do Cuatri)\01-02 HTML y CSS\01html\Beerseba\Saco Barbie.jpg" alt="Saco fucsia de crep brilloso" class="miniatura">
+        <h4>Saco de Crep Brilloso </h4>
+        <a href=""><button class="boton-editar">Editar</button></a>
+    </div>
+
+    <!-- Más productos -->
+</div>
+
+</body>
+</html>
+
+</body>
+</html>

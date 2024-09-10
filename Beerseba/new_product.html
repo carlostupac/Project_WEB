@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Producto</title>
+    <link rel="stylesheet" href="new_product.css">
+</head>
+<body>
+    
+</body>
+</html>
+
+<!--MENUUU-->
+<div class="topnav" id="myTopnav">
+    <a href="C:\Users\Vanesa\Desktop\Beerseba\Admin.html" > Home </a>
+    <a href="C:\Users\Vanesa\Desktop\Beerseba\new_product.html" class="active" > Crear Producto </a>
+    <a href="C:\Users\Vanesa\Desktop\Beerseba\pedidos.html" > Pedidos Pendiente </a>
+    <a href="C:\Users\Vanesa\Desktop\Beerseba\homepage (1).html" class="Live"> Go Live </a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+
+</div>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
+
+<div style="padding-left:16px">
+    <h1> Crear Producto </h1>
+    <hr>
+</div>
+
+
+
+<!--FORMULARIO -->
+<div>
+    <form action="" class="container">
+        <div class="row">
+            <div class="col-25">
+                <label  for="nom01"><strong>Nombre Producto:</strong></label>
+            </div>
+            <div class="col-75">
+                <input  type="text" name="nombre" id="nom01" >
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-25">
+                <label for="desc01"><strong> Descripción: </strong></label>
+            </div>
+            <div class="col-75">
+                <textarea name="descripcion" id="desc01" ></textarea>
+            </div>
+          
+        </div>
+        <div class="row"> 
+            <fieldset>
+                <legend>Categoria</legend>
+                    <div class="product-group">
+                        <input type="radio" id="pantalon" name="opcion" class="product" />
+                        <label for="pantalon" class="product-label">Pantalon</label>
+                        
+                        <input type="radio" id="remera" name="opcion" class="product" />
+                        <label for="remera" class="product-label">Remera</label>
+                        
+                        <input type="radio" id="vestido" name="opcion" class="product" />
+                        <label for="vestido" class="product-label">Vestido</label>
+                    </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend> Talles </legend>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="05" class="checkbox" />
+                        <label for="05" class="checkbox-label">5</label>
+                        
+                        <input type="checkbox" id="06" class="checkbox" />
+                        <label for="06" class="checkbox-label">6</label>
+                        
+                        <input type="checkbox" id="07" class="checkbox" />
+                        <label for="07" class="checkbox-label">7</label>
+
+                        <input type="checkbox" id="08" class="checkbox" />
+                        <label for="08" class="checkbox-label">8</label>
+
+                        <input type="checkbox" id="10" class="checkbox" />
+                        <label for="10" class="checkbox-label">10</label>
+                </div>
+            </fieldset>
+        </div>
+        
+        <div>
+            <fieldset>
+                <legend> <strong>Agregar Imagen</strong></legend>
+                    <div class="row">
+                        <div class="col-75">
+                            <input type="file" name="archivo" id="arch01"/><br><br>
+                        </div>
+            </fieldset>
+        </div>
+
+        <div class="row">
+            <br>
+            <br>                
+            <input type="submit"  value="Crear">
+            <input type="reset" value="Cancelar">
+
+        </div>
+
+    
+</div>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogger de bengalina</title>
+    <link rel="stylesheet" href="detalle.css">
+</head>
+<body>
+
+    <div class="barra-superior">
+        <div class="contacto">
+            <span>+54 9 11 2338-4312</span> | 
+            <span>beersebaonline@gmail.com</span>
+        </div>
+        <div class="mayorista">
+            VENTA MAYORISTA TALLES ESPECIALES
+        </div>
+    </div>
+
+    <nav>
+        <div class="logo">
+            <a href="C:\Users\Vanesa\Documents\Programacion Web (2do Cuatri)\01-02 HTML y CSS\01html\Beerseba\homepage (1).html"><img src="C:\Users\Vanesa\Documents\Programacion Web (2do Cuatri)\01-02 HTML y CSS\01html\Beerseba\image-removebg-preview.png" alt="logo"></a>
+        </div>
+    </nav>
+    
+    <div class="main-container"> 
+        <div class="product-container">
+            <div class="product-image">
+               <img src="C:\Users\Vanesa\Documents\Programacion Web (2do Cuatri)\01-02 HTML y CSS\01html\Beerseba\cute.jpg" alt="PANTALÓN RECTO DE BENGALINA">
+            </div>
+            <div class="product-details">
+                <h1>PANTALÓN RECTO DE BENGALINA</h1>
+                <p class="price">$15.000</p>
+                <p class="installments">Todos los medios de pago</p>
+                <div class="color-options">
+                    <h3>COLOR</h3>
+                    <div class="color-option" style="background-color: rgb(0, 0, 0);"></div>
+                    <div class="color-option" style="background-color: rgb(204, 25, 25);"></div>
+                    <div class="color-option" style="background-color: rgb(221, 0, 151);"></div>
+                    <div class="color-option" style="background-color: rgb(20, 58, 192);"></div>
+                    <div class="color-option" style="background-color: rgb(167, 61, 23);"></div>
+                    <div class="color-option" style="background-color: rgb(192, 235, 105);"></div>
+                </div>
+                <div class="size-options">
+                    <h3>TALLE</h3>
+                    <input type= "radio" id="05"class="size-option" name="talle"/>
+                    <label for="05" class="size-label">5</label>
+                    <input type= "radio" id="06"class="size-option" name="talle"/>
+                    <label for="06" class="size-label">6</label>
+                    <input type= "radio" id="07"class="size-option" name="talle"/>
+                    <label for="07" class="size-label">7</label>
+                    <input type= "radio" id="08"class="size-option" name="talle"/>
+                    <label for="08" class="size-label">8</label>
+                    <input type= "radio" id="010"class="size-option" name="talle"/>
+                    <label for="010" class="size-label">10</label>
+                </div>
+
+
+
+                <p class="size-guide" onclick="toggleTablaTalles()">GUÍA DE TALLES +</p>    
+                <div id="tabla-talles" class="tabla-talles">
+                    <table>
+                        <tr>
+                            <th>Talle</th>
+                            <th>Cintura (cm)</th>
+                            <th>Cadera (cm)</th>
+                            <th>Largo (cm)</th>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>82</td>
+                            <td>90</td>
+                            <td>97,5</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>86</td>
+                            <td>94</td>
+                            <td>99</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>92</td>
+                            <td>102</td>
+                            <td>102</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>96</td>
+                            <td>106</td>
+                            <td>104</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>100</td>
+                            <td>110</td>
+                            <td>108</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="cantidad">
+                <button class="cantidad-btn" id="btn-minus">-</button>
+                <span id="cantidad-num">1</span>
+                <button class="cantidad-btn" id="btn-plus">+</button>
+            </div>
+        
+            <a href="C:\Users\Vanesa\Documents\Programacion Web (2do Cuatri)\01-02 HTML y CSS\01html\Beerseba\Resumen_compra.html"><button class="btn-agregar">Comprar</button></a>
+        </div>
+
+
+    <script>
+        function toggleTablaTalles() {
+            const tablaTalles = document.getElementById("tabla-talles");
+            if (tablaTalles.style.display === "none" || tablaTalles.style.display === "") {
+                tablaTalles.style.display = "block";
+            } else {
+                tablaTalles.style.display = "none";
+            }
+        }
+        
+        const btnMinus = document.getElementById("btn-minus");
+        const btnPlus = document.getElementById("btn-plus");
+        const cantidadNum = document.getElementById("cantidad-num");
+
+        let cantidad = 1;
+
+        btnMinus.addEventListener("click", () => {
+            if (cantidad > 1) {
+                cantidad--;
+                cantidadNum.textContent = cantidad;
+        }
+        
+    });
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const colorOptions = document.querySelectorAll('.color-option');
+
+        colorOptions.forEach(option => {
+            option.addEventListener('click', () => {
+                // Primero, quita la clase 'selected' de todos los círculos
+                colorOptions.forEach(opt => opt.classList.remove('selected'));
+
+                // Luego, añade la clase 'selected' al círculo clicado
+                option.classList.add('selected');
+            });
+        });
+    });
+
+
+    btnPlus.addEventListener("click", () => {
+        cantidad++;
+        cantidadNum.textContent = cantidad;
+    });
+
+    </script>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

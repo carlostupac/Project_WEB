@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras Pendientes</title>
+    <link rel="stylesheet" href="pedidos.css">
+</head>
+<body>
+
+<!--MENUUUU-->
+<div class="topnav" id="myTopnav">
+    <a href="C:\Users\Vanesa\Desktop\Beerseba\Admin.html" > Home </a>
+    <a href="C:\Users\Vanesa\Desktop\Beerseba\new_product.html" > Crear Producto </a>
+    <a href="C:\Users\Vanesa\Desktop\Beerseba\pedidos.html" class="active" > Pedidos Pendiente </a>
+    <a href="C:\Users\Vanesa\Desktop\Beerseba\homepage (1).html" class="Live"> Go Live </a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
+
+<div style="padding-left:16px">
+    <h1> Pedidos Pendientes </h1>
+    <hr>
+</div>
+
+
+
+<!--LISTA PEDIDOS-->
+
+
+<div class="lista-compras">
+    <div class="compra">
+        <div class="encabezado-compra">
+            <h3>#7645130 </h3>
+            <button class="boton-desplegar">Mostrar Detalles</button>
+        </div>
+        <div class="detalles-compra">
+            <p><strong>Numero de Compra:</strong> #7645130 </p>
+            <p><strong>Producto:</strong> Camisa MArtha </p>
+            <p><strong>Talle:</strong>8</p> 
+            <p><strong>Cantidad:</strong> 2</p>
+            <br>
+            <p><strong>Total:</strong> $120.00</p>
+            <label for="envio"><strong> Enviado </label></strong>
+            <input type="checkbox" id="envio"/>
+            <div class="acciones">
+                <button class="boton cancelar">Cancelar Pedido</button>
+                <button class="boton finalizar">Finalizar Pedido</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="compra">
+        <div class="encabezado-compra">
+            <h3>#202409</h3>
+            <button class="boton-desplegar">Mostrar Detalles</button>
+        </div>
+        <div class="detalles-compra">
+            <p><strong>Núm. de compra:</strong> #202409</p>
+            <p><strong>Producto:</strong> Remera Blanca</p>
+            <p><strong>Talle:</strong>10</p> 
+            <p><strong>Cantidad:</strong> 1</p>
+            <br>
+            <p><strong>Total:</strong> $45.00</p>
+            <label for="envio"><strong> Enviado </label></strong>
+            <input type="checkbox" id="envio"/>
+            <div class="acciones">
+                <button class="boton cancelar">Cancelar Pedido</button>
+                <button class="boton finalizar">Finalizar Pedido</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Más compras aquí -->
+</div>
+
+</body>
+</html>
+
+<script>
+    document.querySelectorAll('.boton-desplegar').forEach(button => {
+        button.addEventListener('click', () => {
+            const detalles = button.parentElement.nextElementSibling;
+            detalles.style.display = detalles.style.display === 'block' ? 'none' : 'block';
+            button.textContent = detalles.style.display === 'block' ? 'Ocultar Detalles' : 'Mostrar Detalles';
+        });
+    });
+</script>
+
+
+
+<!--
+
+<footer>
+    <p>
+        All rights reserved. 
+    </p>
+</footer>
+-->

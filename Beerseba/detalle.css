@@ -1,0 +1,348 @@
+
+.barra-superior {
+    background: linear-gradient(to right, #FF5E62, #FF9966);
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    
+}
+
+nav {        
+    border: none;
+    background: white;
+    margin-bottom: 1.5%;
+    display: flex;
+    justify-content: center; /* Centramos horizontalmente */
+    align-items: center;
+    height: auto;
+    max-width: 100%;
+    padding: 10px 0;
+}     
+
+.logo{
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    background-color: #ededed;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    background-color: #ededed;
+    max-width: 90%;
+    margin: 20px auto 0 auto;
+    border-radius: 20px;
+}
+
+.product-container {
+    display: flex;
+    max-width: 1000px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+
+
+}
+
+.product-image img {
+    width: 500px;
+    height: auto;
+    max-height: fit-content;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+.product-details {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.tabla-talles{
+    padding: 20px;
+    flex-grow: 1;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.price {
+    font-size: 20px;
+    color: #666;
+    margin: 0;
+    text-align: center;
+}
+
+.installments {
+    color: #999;
+    margin: 10px 0 20px;
+    text-align: center;
+}
+
+.color-options, .size-option {
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 14px;
+    margin: 0 0 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.color-option {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.color-option:hover {
+    transform: scale(1.2); /* Agranda el círculo al pasar el cursor sobre él */
+}
+.color-option.selected {
+    transform: scale(1.2); /* Mantiene el tamaño más grande cuando está seleccionado */
+    border-color: black; /* Cambia el color del borde si es necesario */
+}
+
+.size-option {
+    width: 80px;
+    height: 30px;
+    font-size: 12px;
+    padding: 5px 10px;
+    text-align: center;
+    background-color: #fff;
+    color: #333;
+    display: none;
+
+}
+.size-label {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 5px;
+    background-color: #ffffff;
+    border: 2px solid black;
+    border-radius: 50px;
+    cursor:pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+.size-option:checked + .size-label{
+    background-color: black;
+    border-color: black;
+    color: white
+}
+
+.size-label:hover{
+    background-color: #ded9d9;
+}
+/*.size-option:checked + .radio-label:hover{
+    background: #2dd449;
+}*/
+
+.size-option.selected, .color-option.selected {
+    border-color: black;
+}
+.cantidad {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    width: 120px;
+    padding: 5px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    position: center;
+    justify-content: space-between;
+}
+
+.cantidad-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 0 10px;
+    position: right; 
+}
+
+#cantidad-num {
+    font-size: 20px;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.size-guide {
+    font-size: 14px;
+    color: #999;
+    cursor: pointer;
+    text-decoration: underline;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.add-to-cart {
+    width: 100%;
+    padding: 15px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/*.add-to-cart:hover {
+    background-color: #c60d0d;
+}*/
+.talle {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.guia-talles {
+    color: #000;
+    cursor: pointer;
+    font-style: underline;
+    margin-top: 10px;
+}
+
+.tabla-talles {
+    display: none;
+    margin-top: 10px;
+}
+
+.tabla-talles table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabla-talles th, .tabla-talles td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.tabla-talles th {
+    background-color: #f2f2f2;
+}
+
+.btn-agregar {
+    width: 100%;
+    padding: 10px;
+    /*background-color: #333;*/
+   background: linear-gradient(to right, #ff3933,#ff8b4c);
+   /* background: black;*/
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.btn-agregar:hover{
+    background: linear-gradient(to right, #e6524c,#ffa372);
+}
+/**.btn-agregar:checked{
+    background: white;
+    color: black;
+    border-color: #000;
+}*/
+.btn-agregar:active {
+    background: white; /* Color de fondo cuando está clickeado */
+    color: black; /* Color del texto cuando está clickeado */
+    border: 1px solid #e6524c; /* Borde cuando está clickeado */
+}
+
+
+/* Media Queries para hacer la página responsive */
+@media (max-width: 768px) {
+    .product-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-image img {
+        width: 100%;
+    }
+
+    .product-details {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .cantidad {
+        margin: 20px 0;
+        justify-content: center;
+    }
+
+    .size-label {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .product-container{
+        border-radius: 5px;
+    }
+
+    h1{
+        padding-left: 10px;
+    }
+
+    .color-options {
+        padding-left: 20px;
+    }
+
+    .size-options{
+        padding-left: 20px;
+    }
+
+    .product-image img{
+        width: 100%;
+        padding: 0;
+        border-radius: 5px;
+    }
+
+
+    .cantidad{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 30%;
+        width: 30%;
+    }
+    .cantidad-btn {
+        font-size: 18px;
+    }
+
+    .btn-agregar {
+        margin: 20px;
+        width: 90%;
+        font-size: 14px;
+    }
+}
