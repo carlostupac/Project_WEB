@@ -1,164 +1,208 @@
-@import url(https://fonts.googleapis.com/css?family=Exo:100,200,400);
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
 
-body{
+* {
 	margin: 0;
 	padding: 0;
-	background: #000000;
+	box-sizing: border-box; 
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
 
+body, html{
+	justify-content: center;
+    background-color:#ededed;
+    margin: 0%;
+    padding: 0%;
+}
+
+
+
+body::before{
+	content: "";
+    justify-content: center;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #ededed;
+    background-position: center;
+	background-size: cover;
+	z-index: -1;
+    max-width: 100%;
+}
+
+
+.barra-superior {
+    background: linear-gradient(to right, #FF5E62, #FF9966);
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+nav {        
+    border: none;
+    background: white;
+    margin-bottom: 1.5%;
+    display: flex;
+    justify-content: center; /* Centramos horizontalmente */
+    align-items: center;
+    height: auto;
+    max-width: 100%;
+    padding: 10px 0;
+}     
+
+.logo{
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+.wrapper{
+    margin-left: 30%;
+    margin-top: 25px;
+	width: 490px;
+	border-radius: 10px;
+	padding: 30px;
+	text-align: center;
+	border: 1px solid #0c0c0c2f;
+    background-color: #ffffff;
+	/*backdrop-filter: blur(8px);*/
+
+}
+
+form{
+	display: flex;
+	flex-direction: column;
+
+}
+
+h2{
+	font-size: 25px;
+	margin-bottom: 20px;
 	color: #000000;
-	font-family: Arial;
-	font-size: 12px;
+
+}
+span{
+	color: #710000 !important;
 }
 
-.body{
-	position: absolute;
-	top: -20px;
-	left: -20px;
-	right: -40px;
-	bottom: -40px;
-	width: auto;
-	height: auto;
-	background-image: url(https://plus.unsplash.com/premium_photo-1664202526336-9edbfc8e2886?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-	-webkit-filter: blur(5px);
-	z-index: 0;
+.input-field{
+	position: relative; 
+	border-bottom: 1px solid #ccc;
+	margin: 15px 0;
+
 }
 
-.grad{
-	position: absolute;
-	top: -20px;
-	left: -20px;
-	right: -40px;
-	bottom: -40px;
-	width: auto;
-	height: auto;
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.65))); /* Chrome,Safari4+ */
-	z-index: 1;
-	opacity: 0.7;
+.input-field label{
+	 position: absolute;
+	 color: #00000050;
+	 top: 50%; 
+	 left: 0;
+	 transform: translateY(-50%);
+	 font-size: 16px;
+	 pointer-events: none;
+	 transition: 0.15s ease;
 }
 
-.header{
-	position: absolute;
-	top: calc(50% - 35px);
-	left: calc(45% - 255px);
-	z-index: 0;
-}
-
-.header div{
-	float: left;
-	color: #fff;
-	font-family: 'Exo', sans-serif;
-	font-size: 35px;
-	font-weight: 200;
-}
-
-.header div span{
-	color: #c71ce9 !important;
-    margin-right: 50px;
-}
-
-.login{
-	position: absolute;
-	top: calc(50% - 75px);
-	left: calc(50% - 50px);
-	height: 150px;
-	width: 350px;
-	padding: 10px;
-	z-index: 1;
-}
-
-.login input[type=text]{
-	width: 250px;
-	height: 30px;
+.input-field input{
+    display: flex;
+	width: 100%;
+	height: 40px;
+	color: #000000;
 	background: transparent;
-	border: 1px solid rgba(255,255,255,0.6);
-	border-radius: 2px;
+	border: none;
+	outline: none;
+	font-size: 16px;
+}
+
+.input-field input:focus~label, .input-field input:valid~label {
+
+	font-size: 0.8rem;
+	top: 10px;
+	transform: translateY(-120%);
+
+}
+
+.forget {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 25px 0 35px 0; 
+	color: #000000be; 
+	text-decoration: underline;
+}
+
+#remember {
+	accent-color: #000000be;
+    font-weight: bolder;
+}
+
+.forget label{
+	display: flex;
+	align-items: center;
+}
+
+.forget label p{
+	margin-left: 8px;
+}
+
+
+.wrapper a{
+	color: #000000be;
+	text-decoration: underline;
+}
+
+button{
+    background: linear-gradient(to right, #FF5E62, #FF9966) ;
 	color: #fff;
-	font-family: 'Exo', sans-serif;
+	font-weight: 600;
+	border:none;
+	padding: 12px 20px;
+	cursor: pointer; 
+	border-radius: 3px;
 	font-size: 16px;
-	font-weight: 400;
-	padding: 4px;
+	border: 1px solid transparent; 
+	transition: 0.3s ease;
+
 }
 
-.login input[type=password]{
-	width: 250px;
-	height: 30px;
-	background: transparent;
-	border: 1px solid rgba(255,255,255,0.6);
-	border-radius: 2px;
-	color: #fff;
-	font-family: 'Exo', sans-serif;
-	font-size: 16px;
-	font-weight: 400;
-	padding: 4px;
-	margin-top: 10px;
-}
-/*
-.login a[type=button]{
-	width: 260px;
-	height: 35px;
-	background: #fff;
-	border: 1px solid #fff;
-	cursor: pointer;
-	border-radius: 2px;
-	color: #a18d6c;
-	font-family: 'Exo', sans-serif;
-	font-size: 16px;
-	font-weight: 400;
-	padding: 6px;
-	margin-top: 10px;
-}*/
+.register{
+	text-align: center;
+	margin-top: 30px;
+	color: #000000;
 
-.login-btn a{
-	float: center;
-    display: block;
-    color: #3f033c86;
-    text-align: center;
-    padding: 10px 50px;
-    text-decoration: none;
-    font-size: 12px;
-	font-weight: 800;
-	font-family:Verdana, Geneva, Tahoma, sans-serif;
-	
 }
 
-.login-btn{
-	margin-top: 10px;
-	margin-left: 50px;
-	border-radius: 30px;
-	color: black;
+@media screen and (max-width: 768px) {
+
+    .wrapper{
+        position: absolute;
+        margin-left: 30px;
+        margin-right: auto;
+
+    }
+    
 }
 
-
-/*
-.login a[type=button]:hover{
-	opacity: 0.8;
-}
-
-.login a[type=button]:active{
-	opacity: 0.6;
-}
-
-.login input[type=button]:focus{
-	outline: none;
-}
-*/
-
-.login input[type=text]:focus{
-	outline: none;
-	border: 1px solid #c71ce9;
-}
-
-.login input[type=password]:focus{
-	outline: none;
-	border: 1px solid #c71ce9;
-}
+@media screen and (max-width: 600px) {
+    .wrapper{
+        position: absolute;
+        margin-left: 4px;
+        margin-right: auto;
+    }
 
 
-::-webkit-input-placeholder{
-   color: rgba(255,255,255,0.6);
-}
 
-::-moz-input-placeholder{
-   color: rgba(255,255,255,0.6);
+    .logo{
+        justify-content: center;
+        margin-left: 10%;
+    }
+    .logo img{
+        max-width: 80%;
+    }
+
+    .box3{
+        margin-left: 02%;
+        margin-right: 02%;
+    }
 }
