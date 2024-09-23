@@ -1,5 +1,4 @@
 
-
 let profileDropdownList = document.querySelector(".profile-dropdown-list");
 let btn = document.querySelector(".profile-dropdown-btn");
 
