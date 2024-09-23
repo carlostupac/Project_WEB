@@ -2,12 +2,13 @@
 
 :root {
     --primary: #eeeeee;
-    --secondary: #227c70;
+    --secondary: #FF9966;
     --green: #82cd47;
-    --secondary-light: rgb(34, 124, 112, 0.2);
-    --secondary-light-2: rgb(127, 183, 126, 0.1);
+    --secondary-light: rgba(250, 173, 143, 0.719);
+    --secondary-light-2: #faa5bf9a;
     --white: #fff;
     --black: #393e46;
+    --degrade: linear-gradient(to right, #FF5E62, #FF9966);
   
     --shadow: 0px 2px 8px 0px var(--secondary-light);
   }
@@ -42,18 +43,18 @@ body{
     background-color: var(--white);
     border-radius: 10px;
     box-shadow: var(--shadow);
-    max-height: 0;
-    overflow: hidden;
+   /* max-height: 0;
+    overflow: hidden;*/
     transition: max-height 0.5s;
 
 }
 
 .profile-dropdown-list.active{
-    max-width: 500px;
+    max-height: 500px;
 }
 
 .profile-dropdown-list hr{
-    border: .5px solid red;
+    border: .5px solid #FF5E62;
 }
 
 .profile-dropdown-list-item{
@@ -80,7 +81,7 @@ body{
     font-size: 1.1rem;
     width: 2.3rem;
     height: 2.3rem;
-    background-color: var(--secondary);
+    background-color: var(--secondary-light);
     color: var(--white);
     line-height: 2.3rem;
     text-align: center;
@@ -95,14 +96,13 @@ body{
     padding-right: 1rem;
     font-size: 0.9rem;
     font-weight: 500;
-    border: 1px solid var(--secondary);
+    border: 1px solid rgb(207, 207, 207);
     border-radius: 50px;
     cursor: pointer;
     transition: box-shadow 0.2s ease-in, background-color 0.2s ease-in, border 0.3s;
 }
 
 .profile-dropdown-btn:hover{
-    background-color: var(--secondary-light);
     box-shadow: var(--shadow);
 }
 
