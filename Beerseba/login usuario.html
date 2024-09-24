@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="login usuario.css">
     <title>Beerseba</title>
+	<script src="login usuario.js"></script>
 </head>
 <body>
     <div class="barra-superior">
@@ -25,14 +26,14 @@
 
         
 	<div class="wrapper">
-		<form action="#">
+		<form name= "mylogin" action="demo_form.php" onsubmit="return validateformLogin()">
 			<h2>Login</h2>
 			<div class="input-field">
-				<input type="text" required>
+				<input name="mail" type="text" id= "UserEmail" onblur="validarmail(this.id)" >
 				<label>Ingresar Email</label>
 			</div>
 			<div class="input-field">
-				<input type="password" required>
+				<input name= "password" type="password" >
 				<label>Ingresar constraseña</label>
 			</div>
 			<div class="forget">
@@ -42,7 +43,7 @@
 				</label>
 				<a class="forgot"  href="#">¿Olvidaste tu contraseña?</a>
 			</div>
-			<button type="submit" > <a href="homepage2.html">Login In</button></a>
+			<input id="lastbtn" type="submit" value="Log In">
 			<div class="register">
 				<p>¿No tiene cuenta?
 					<a href="Registrarse.html">Registrate</a>

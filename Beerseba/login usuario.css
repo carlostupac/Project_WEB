@@ -152,7 +152,7 @@ span{
 	text-decoration: underline;
 }
 
-button{
+#lastbtn {
     background: linear-gradient(to right, #FF5E62, #FF9966) ;
 	color: #fff;
 	font-weight: 600;
@@ -205,4 +205,9 @@ button{
         margin-left: 02%;
         margin-right: 02%;
     }
+}
+
+
+.recuadre{
+	border-color: #710000;
 }
