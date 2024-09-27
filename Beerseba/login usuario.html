@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="login usuario.css">
     <title>Beerseba</title>
 	<script src="login usuario.js"></script>
@@ -29,12 +29,16 @@
 		<form name= "mylogin" action="demo_form.php" onsubmit="return validateformLogin()">
 			<h2>Login</h2>
 			<div class="input-field">
-				<input name="mail" type="text" id= "UserEmail" onblur="validarmail(this.id)" >
+				<input name="mail" type="text" id= "UserEmail" >
 				<label>Ingresar Email</label>
+				<small class="error-message" id="email-error"></small>
+
 			</div>
 			<div class="input-field">
-				<input name= "password" type="password" >
+				<input name= "password" type="password" id="Userpassword" >
 				<label>Ingresar constraseña</label>
+				<small class="error-message" id="password-error"></small>
+
 			</div>
 			<div class="forget">
 				<label for="remember">

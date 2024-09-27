@@ -29,6 +29,8 @@ body::before{
 }
 
 
+
+
 .barra-superior {
     background: linear-gradient(to right, #FF5E62, #FF9966);
     color: white;
@@ -58,15 +60,18 @@ nav {
 
 
 .wrapper{
-    margin-left: 30%;
-    margin-top: 25px;
-	width: 490px;
-	border-radius: 10px;
-	padding: 30px;
-	text-align: center;
-	border: 1px solid #0c0c0c2f;
+
+	width: 100%;
+    max-width: 450px;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+	font-size: 14px;
+    border: 1px solid #0c0c0c2f;
     background-color: #ffffff;
-	/*backdrop-filter: blur(8px);*/
+	align-self: center;
+	justify-content: center;
+	margin-left: 33%;
 
 }
 
@@ -174,40 +179,57 @@ span{
 }
 
 @media screen and (max-width: 768px) {
-
-    .wrapper{
-        position: absolute;
-        margin-left: 30px;
-        margin-right: auto;
-
+	.wrapper {
+        padding: 20px;
+		margin-left: 20%;
     }
-    
+
+    form {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
 }
 
 @media screen and (max-width: 600px) {
-    .wrapper{
-        position: absolute;
-        margin-left: 4px;
-        margin-right: auto;
+	.wrapper {
+        padding: 10px;
+		margin-left: 5%;
+		height: 100%;
     }
 
 
-
-    .logo{
-        justify-content: center;
-        margin-left: 10%;
-    }
-    .logo img{
-        max-width: 80%;
+    .input-field {
+        margin: 10px 0;
     }
 
-    .box3{
-        margin-left: 02%;
-        margin-right: 02%;
+    h2 {
+        font-size: 20px;
     }
+
+    form {
+        font-size: 12px;
+		padding: 25px;
+    }
+
+    #lastbtn {
+        padding: 10px;
+        font-size: 14px;
+    }
+}	
+
+
+/* Estilo para mostrar mensajes de error */
+.error-message {
+    color: red;
+    font-size: 12px;
+    display: none; /* Se oculta hasta que haya un error */
 }
 
-
-.recuadre{
-	border-color: #710000;
+/* Clase para marcar los inputs con errores */
+.input-error {
+    border: 2px solid red;
 }
