@@ -1,74 +1,41 @@
-document.getElementById('login-form').addEventListener('submit', function (event) {
-    // Evitamos que el formulario se envíe antes de validarlo
-    event.preventDefault();
+const email = document.getElementById("email")
+const pass = document.getElementById("password")
+const form = document.getElementById("mylogin")
+const pEmail = document.getElementById("warning-mail")
+const pPass = document.getElementById("warning-password")
 
-    // Variables de los campos
-    const emailInput = document.getElementById('UserEmail');
-    const passwordInput = document.getElementById('Userpassword');
+form.addEventListener("submit", e=>{
+    e.preventDefault()
+    pEmail.innerHTML = ""
+    pPass.innerHTML = ""
+    /*Los resetea*/
 
-    // Limpiar los mensajes de error al intentar enviar el formulario de nuevo
-    clearErrors();
+    let warningA = ""
+    let warningB = ""
 
-    // Validación
-    const isEmailValid = validateEmail(emailInput);
-    const isPasswordValid = validatePassword(passwordInput);
-
-    // Si ambas validaciones son correctas, el formulario se puede enviar
-    if (isEmailValid && isPasswordValid) {
-        // Aquí puedes enviar el formulario
-        // por ejemplo: this.submit(); // o usando AJAX si lo deseas
-        alert("Formulario válido. Enviando...");
-    }
-});
-
-function validateEmail(input) {
-    const emailValue = input.value.trim();
-    const emailError = document.getElementById('email-error');
+    let ExpRegEmail = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i
+    /*expresion regular para el email*/
     
-    // Expresión regular para validar el formato de un correo electrónico
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    let expRegPass = /^[A-Z][a-zA-Z0-9]*\d.*/
+    /*Expresion regular para que la contraseña contenga la primera letra mayuscula y al menos un numero*/
+    
+    let entrar = false
+    /*inicializa la variable en falso */
 
-    if (emailValue === "") {
-        emailError.textContent = "El correo es obligatorio.";
-        emailError.style.display = "block";
-        input.classList.add('input-error');
-        return false;
-    } else if (!emailRegex.test(emailValue)) {
-        emailError.textContent = "Por favor, ingrese un correo electrónico válido.";
-        emailError.style.display = "block";
-        input.classList.add('input-error');
-        return false;
+    if(!ExpRegEmail.test(email.value)){
+        warningA += 'El Email no es valido <br>';
+        entrar = true
     }
 
-    input.classList.remove('input-error');
-    return true;
-}
-
-function validatePassword(input) {
-    const passwordValue = input.value.trim();
-    const passwordError = document.getElementById('Userpassword');
-
-    if (passwordValue === "") {
-        passwordError.textContent = "La contraseña es obligatoria.";
-        passwordError.style.display = "block";
-        input.classList.add('input-error');
-        return false;
+    if (!expRegPass.test(pass.value)){
+        warningB += 'La contraseña no es válida <br>'
+        entrar = true
     }
 
-    input.classList.remove('input-error');
-    return true;
-}
+    if (entrar){
+        pEmail.innerHTML = warningA
+        pPass.innerHTML = warningB
 
-function clearErrors() {
-    // Ocultamos todos los mensajes de error
-    const errorMessages = document.querySelectorAll('.error-message');
-    errorMessages.forEach(error => {
-        error.style.display = "none";
-    });
+    }
 
-    // Eliminamos las clases de error en los inputs
-    const errorInputs = document.querySelectorAll('.input-error');
-    errorInputs.forEach(input => {
-        input.classList.remove('input-error');
-    });
-}
+})

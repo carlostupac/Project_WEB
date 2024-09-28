@@ -91,22 +91,32 @@ span{
 	color: #710000 !important;
 }
 
+#input-mail{
+	margin-top: 20px;
+}
+
+#input-pass{
+	margin-top: 40px;
+}
+
 .input-field{
 	position: relative; 
 	border-bottom: 1px solid #ccc;
-	margin: 15px 0;
+	margin-left: 5px;
+	margin-top: 30px;
+	margin-bottom: 0;
 
 }
 
 .input-field label{
 	 position: absolute;
 	 color: #00000050;
-	 top: 50%; 
+	 top: 30%; 
 	 left: 0;
 	 transform: translateY(-50%);
-	 font-size: 16px;
+	 font-size: 15px;
 	 pointer-events: none;
-	 transition: 0.15s ease;
+	 transition: 0.15s ease-in-out all;
 }
 
 .input-field input{
@@ -120,12 +130,32 @@ span{
 	font-size: 16px;
 }
 
-.input-field input:focus~label, .input-field input:valid~label {
+input:focus~label, input:valid~label{
+	top: -14px;
+	font-size: 13px;
+	color: #FF9966;
+}
 
-	font-size: 0.8rem;
-	top: 10px;
-	transform: translateY(-120%);
+.barra{
+	position: relative;
+	display: block;
+	width: 100%;
+}
 
+.barra::before{
+	content: "";
+	height: 1px;
+	width: 0%;
+	bottom: 0;
+	position: absolute;
+	background: linear-gradient(to right, #FF5E62, #FF9966);
+	transition: 0.3s ease width;
+	left: 0;
+
+}
+
+input:focus~.barra::before{
+	width: 100%;
 }
 
 .forget {
@@ -221,15 +251,16 @@ span{
     }
 }	
 
+.warningS{
+	padding: 0;
 
-/* Estilo para mostrar mensajes de error */
-.error-message {
-    color: red;
-    font-size: 12px;
-    display: none; /* Se oculta hasta que haya un error */
 }
 
-/* Clase para marcar los inputs con errores */
-.input-error {
-    border: 2px solid red;
+
+.warning{
+	padding-top: 0;
+	width: 200px;
+	text-align: center;
+	margin: auto;
+	color: #ff0000;
 }

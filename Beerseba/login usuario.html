@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="login usuario.css">
     <title>Beerseba</title>
-	<script src="login usuario.js"></script>
 </head>
 <body>
     <div class="barra-superior">
@@ -20,26 +19,31 @@
 
     <nav>
         <div class="logo">
-            <a href="Beerseba\homepage (1).html"><img src="pics/image-removebg-preview.png" alt="logo"></a>
+            <a href="homepage2.html"><img src="pics/image-removebg-preview.png" alt="logo"></a>
         </div>
     </nav>
 
         
 	<div class="wrapper">
-		<form name= "mylogin" action="demo_form.php" onsubmit="return validateformLogin()">
+		<form name= "mylogin" id="mylogin">
 			<h2>Login</h2>
-			<div class="input-field">
-				<input name="mail" type="text" id= "UserEmail" >
+			<div class="input-field" id="input-mail">
+				<input name="mail" type="text" id= "email" required><span class="barra"></span>
 				<label>Ingresar Email</label>
-				<small class="error-message" id="email-error"></small>
-
 			</div>
-			<div class="input-field">
-				<input name= "password" type="password" id="Userpassword" >
-				<label>Ingresar constraseña</label>
-				<small class="error-message" id="password-error"></small>
-
+			<div class="warningS">
+				<p class="warning" id="warning-mail"></p>
 			</div>
+
+			<div class="input-field" id="input-pass">
+				<input name= "password" type="password" id="password" required><span class="barra"></span>
+				<label>Ingresar constraseña</label> 
+			</div>
+
+			<div class="warningS">
+			<p class="warning" id="warning-password"></p>
+			</div>
+
 			<div class="forget">
 				<label for="remember">
 					<input type="checkbox" id="remember">
@@ -47,7 +51,7 @@
 				</label>
 				<a class="forgot"  href="#">¿Olvidaste tu contraseña?</a>
 			</div>
-			<input id="lastbtn" type="submit" value="Log In">
+			<button id="lastbtn" type="submit">Log In</button>
 			<div class="register">
 				<p>¿No tiene cuenta?
 					<a href="Registrarse.html">Registrate</a>
@@ -55,6 +59,10 @@
 				
 			</div>
 		</form>
-	</div>
-    
+		<script src="login usuario.js"></script>
 
+	</div>
+
+
+</body>
+</html>
