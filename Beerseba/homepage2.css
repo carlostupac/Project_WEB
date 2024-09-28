@@ -132,3 +132,11 @@ body{
     color: var(--green);
 }
 
+@media screen and (max-width: 1110px) {
+    .navbar{
+        padding-bottom: 70px;
+    }
+    .nav-extra {
+        padding-top: 80px;
+    }
+}

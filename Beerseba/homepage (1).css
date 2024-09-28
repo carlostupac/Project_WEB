@@ -259,7 +259,7 @@ h2 {
 }
 
 /* Responsiveness */
-
+/*
 @media screen and (max-width: 600px) {
 
     .logo{
@@ -270,14 +270,14 @@ h2 {
     .sidebar{
         float: right;
     }
-
+    
     .nav-extra{
         display: none;
     }
-
+    
     
 }
-
+*/
 @media screen and (max-width: 768px) {
 
     .navbar{
@@ -298,7 +298,7 @@ h2 {
     }
     
     .nav-extra{
-        display: none;
+        padding-top: 80px;
     }
 
     .banner {
@@ -379,5 +379,14 @@ h2 {
 
     .colores{
         display: none;
+    }
+}
+
+@media screen and (max-width: 1110px) {
+    .navbar{
+        padding-bottom: 70px;
+    }
+    .nav-extra {
+        padding-top: 80px;
     }
 }
