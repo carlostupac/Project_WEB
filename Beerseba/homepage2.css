@@ -33,6 +33,7 @@ body{
 .profile-dropdown{
     position: relative;
     width: fit-content;
+    z-index: 1;
 
 }
 
