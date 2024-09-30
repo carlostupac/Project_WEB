@@ -5,73 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jogger de bengalina</title>
     <link rel="stylesheet" href="detalle.css">
-    <script src="detalle.js"></script>
+    <link rel="stylesheet" href="homepage2.css">
+    <link rel="stylesheet" href="homepage (1).css">
 </head>
 <body>
 
-    <!-- Barra superior -->
-    <div class="barra-superior">
-        <div class="contacto">
-            <span>+54 9 11 2338-4312</span> | 
-            <span>beersebaonline@gmail.com</span>
-        </div>
-        <div class="mayorista">
-            VENTA MAYORISTA TALLES ESPECIALES
-        </div>
-    </div>
 
-    <!-- Barra de navegación -->
-    <nav class="navbar">
-        <div id="mySidebar" class="sidebar">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-            <a href="#">INICIO</a>
-            <a href="#">PRODUCTOS</a>
-            <a href="#">CONTACTO</a>
-            <a href="#">QUIÉNES SOMOS</a>
-        </div>
-        
-        <div id="main">
-            <button class="openbtn" onclick="openNav()">☰</button>  
-        <script>
-        function openNav() {
-            document.getElementById("mySidebar").style.width = "250px";
-            document.getElementById("main").style.marginLeft = "250px";
-        }
-        
-        function closeNav() {
-            document.getElementById("mySidebar").style.width = "0";
-            document.getElementById("main").style.marginLeft= "0";
-        }
-        </script>
-
-        <div class="logo">
-            <img src="pics\image-removebg-preview.png" alt="Beerseba Logo">
-        </div>
-        <div class="nav-extra">
-            <div class="carrito">
-                <span class="icono-carrito">🛒</span>
-                <span>$0,00</span>
-            </div>
-            <input type="search" placeholder="Buscar">
-            <a href="Registrarse.html">Crear cuenta</a> | <a href="login usuario.html">Iniciar sesión</a>
-        </div>
-    </nav>
-
-    <nav>
-        <div class="logo">
-            <a href="homepage (1).html"><img src="pics\image-removebg-preview.png" alt="logo"></a>
-        </div>
-    </nav>
     
     <div class="main-container"> 
         <div class="product-container">
             <div class="product-image">
                <!--<img src="C:\Users\Vanesa\Documents\Programacion Web (2do Cuatri)\01-02 HTML y CSS\01html\Beerseba\cute.jpg" alt="PANTALÓN RECTO DE BENGALINA">-->
-               <img src="C:\Users\ASUS-A\Downloads\Recto de Bengalina  (1).jpg" alt="Pantalón recto de bengalina">
+               <img src="pics/Recto de Bengalina .jpg" alt="Pantalón recto de bengalina">
             </div>
-            <input type="button" class="favourite">
-            <p><i class="fi fi-rs-heart"></i></p>
-            <div></div>
             <div class="product-details">
                 <h1>PANTALÓN RECTO DE BENGALINA</h1>
                 <p class="price">$15.000</p>
@@ -170,13 +116,15 @@
                     <button class="quantity-btn"id="agrega" onclick="agregaUno()">+</button>
                 </div>
         
-            <a href="Resumen_compra.html"><button class="btn-agregar">Comprar</button></a>
+            <button class="btn-comprar" onclick="validarCompra(this)"><a href="Resumen_compra.html">Comprar</a></button>
         </div>
 
 
             </div>
         </div>
     </div>
+    <script src="detalle.js"></script>
+
 </body>
 </html>
 
