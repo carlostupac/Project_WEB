@@ -9,6 +9,7 @@
 </head>
 <body>
 
+    <!-- Barra superior -->
     <div class="barra-superior">
         <div class="contacto">
             <span>+54 9 11 2338-4312</span> | 
@@ -19,10 +20,46 @@
         </div>
     </div>
 
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="#">INICIO</a>
+            <a href="#">PRODUCTOS</a>
+            <a href="#">CONTACTO</a>
+            <a href="#">QUIÉNES SOMOS</a>
+        </div>
+        
+        <div id="main">
+            <button class="openbtn" onclick="openNav()">☰</button>  
+        <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+        
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+        }
+        </script>
+
+        <div class="logo">
+            <img src="pics\image-removebg-preview.png" alt="Beerseba Logo">
+        </div>
+        <div class="nav-extra">
+            <div class="carrito">
+                <span class="icono-carrito">🛒</span>
+                <span>$0,00</span>
+            </div>
+            <input type="search" placeholder="Buscar">
+            <a href="Registrarse.html">Crear cuenta</a> | <a href="login usuario.html">Iniciar sesión</a>
+        </div>
+    </nav>
+
     <nav>
         <div class="logo">
-            <!--<a href="C:\Users\Vanesa\Documents\Programacion Web (2do Cuatri)\01-02 HTML y CSS\01html\Beerseba\homepage (1).html"><img src="C:\Users\Vanesa\Documents\Programacion Web (2do Cuatri)\01-02 HTML y CSS\01html\Beerseba\image-removebg-preview.png" alt="logo"></a>-->
-            <img src="C:\Users\ASUS-A\Downloads\LOGO_BEERSEBA-removebg-preview.png" alt="logo">
+            <a href="homepage (1).html"><img src="pics\image-removebg-preview.png" alt="logo"></a>
         </div>
     </nav>
     
@@ -133,8 +170,7 @@
                     <button class="quantity-btn"id="agrega" onclick="agregaUno()">+</button>
                 </div>
         
-            <a href="C:\Users\Vanesa\Documents\Programacion Web (2do Cuatri)\01-02 HTML y CSS\01html\Beerseba\Resumen_compra.html">
-            <button class="btn-comprar" onclick="validarCompra(this)">Comprar</button>
+            <a href="Resumen_compra.html"><button class="btn-agregar">Comprar</button></a>
         </div>
 
 

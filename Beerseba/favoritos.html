@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beerseba</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="favoritos.css">
+    <link rel="stylesheet" href="homepage2.css">
+</head>
+<body>
+
+   <!--MENUU-->
+
+        <!-- Barra superior -->
+        <div class="barra-superior">
+          <div class="contacto">
+              <span>+54 9 11 2338-4312</span> | 
+              <span>beersebaonline@gmail.com</span>
+          </div>
+          <div class="mayorista">
+              VENTA MAYORISTA TALLES ESPECIALES
+          </div>
+      </div>
+  
+      <!-- Barra de navegación -->
+      <nav class="navbar">
+          <div id="mySidebar" class="sidebar">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+              <a href="homepage2.html">INICIO</a>
+              <a href="#">PRODUCTOS</a>
+              <a href="#">CONTACTO</a>
+              <a href="#">QUIÉNES SOMOS</a>
+          </div>
+          
+          <div id="main">
+              <button class="openbtn" onclick="openNav()">☰</button>  
+  
+          <div class="logo">
+              <img src="pics\image-removebg-preview.png" alt="Beerseba Logo">
+          </div>
+          <div class="nav-extra">
+              <div class="carrito">
+                  <span class="icono-carrito"> ♡ </span>
+              </div>
+              <input type="search" placeholder="Buscar">
+              
+              <div class="profile-dropdown">
+                  <div onclick="toggle()" class="profile-dropdown-btn">
+                    <div class="profile-img">
+                      <i class="fa-solid fa-circle"></i>
+                    </div>
+          
+                    <span
+                      >Victoria
+                      <i class="fa-solid fa-angle-down"></i>
+                    </span>
+                  </div>
+          
+                  <ul class="profile-dropdown-list">
+                    <li class="profile-dropdown-list-item">
+                      <a href="#">
+                        <i class="fa-regular fa-user"></i>
+                        Editar Perfil
+                      </a>
+                    </li> 
+
+                    <li class="profile-dropdown-list-item">
+                      <a href="favoritos.html">
+                        <i class="fas fa-heart"></i>
+                        Favoritos
+                      </a>
+                    </li>
+          
+                    <li class="profile-dropdown-list-item">
+                      <a href="#">
+                        <i class="fa-solid fa-chart-line"></i>
+                        Mis Compras
+                      </a>
+                    </li>
+          
+                    <li class="profile-dropdown-list-item">
+                      <a href="#">
+                        <i class="fa-regular fa-circle-question"></i>
+                        Help & Support
+                      </a>
+                    </li>
+                    <hr />
+          
+                    <li class="profile-dropdown-list-item">
+                      <a href="homepage (1).html">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        Log out
+                      </a>
+                    </li>
+                  </ul>
+                </div>           
+                 
+  
+      </nav>
+      <script src="homepage2.js"></script>
+  <hr>
+
+    <!-- Lista de productos -->
+    <section class="productos">
+        <h2>Mis Favoritos</h2>
+        <div class="productos-grid">
+            <div class="producto">
+                <img src="pics\Recto de Bengalina .jpg" alt="Recto de Bengalina Negro">
+                <h3>Recto de Bengalina</h3>
+                <p>$12.500,00</p>
+                <div class="container-buttons-card">
+                  <button class="favorite">
+                    <!--<i
+                      class="fa-regular fa-heart"
+                      id="favorite-regular"
+                    ></i>-->
+                    <i
+                      class="fa-solid fa-heart"
+                      id="added-favorite"
+                    ></i>
+                  </button>
+                </div>
+            </div>
+            <div class="producto">
+                <img src="pics\Pantalon Cuerina.jpg" alt="Pantalon de Cuerina Negro">
+                <h3>Pantalon de Cuerina</h3>
+                <p>$14.150,00</p>
+                <div class="container-buttons-card">
+                  <button class="favorite">
+                    <!--<i
+                      class="fa-regular fa-heart"
+                      id="favorite-regular"
+                    ></i>-->
+                    <i
+                      class="fa-solid fa-heart"
+                      id="added-favorite"
+                    ></i>
+                  </button>
+                </div>
+            </div>
+            <div class="producto">
+                <img src="pics\Saco Barbie.jpg" alt="Saco Fucsia Brilloso">
+                <h3>Saco Brilloso</h3>
+                <p>$14.150,00</p>
+                <div class="container-buttons-card">
+                  <button class="favorite">
+                    <!--<i
+                      class="fa-regular fa-heart"
+                      id="favorite-regular"
+                    ></i>-->
+                    <i
+                      class="fa-solid fa-heart"
+                      id="added-favorite"
+                    ></i>
+                  </button>
+                </div>
+            </div>
+            <div class="producto">
+              <img src="pics/conjunto verde.jpg" alt="Conjunto verde Sastrero">
+              <h3>Conjunto Sastrero</h3>
+              <p>$14.150,00</p>
+              <div class="container-buttons-card">
+                <button class="favorite">
+                  <!--<i
+                    class="fa-regular fa-heart"
+                    id="favorite-regular"
+                  ></i>-->
+                  <i
+                    class="fa-solid fa-heart"
+                    id="added-favorite"
+                  ></i>
+                </button>
+              </div>
+          </div>
+
+            <!-- Añade más productos según sea necesario -->
+        </div>
+    </section>
+
+
+
+</body>
+</html>

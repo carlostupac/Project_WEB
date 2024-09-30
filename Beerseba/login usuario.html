@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="login usuario.css">
+    <title>Beerseba</title>
+</head>
+<body>
+    <div class="barra-superior">
+        <div class="contacto">
+            <span>+54 9 11 2338-4312</span> | 
+            <span>beersebaonline@gmail.com</span>
+        </div>
+        <div class="mayorista">
+            VENTA MAYORISTA TALLES ESPECIALES
+        </div>
+    </div>
+
+    <nav>
+        <div class="logo">
+            <a href="homepage2.html"><img src="pics/image-removebg-preview.png" alt="logo"></a>
+        </div>
+    </nav>
+
+        
+	<div class="wrapper">
+		<form name= "mylogin" id="mylogin">
+			<h2>Login</h2>
+			<div class="input-field" id="input-mail">
+				<input name="mail" type="text" id= "email" required><span class="barra"></span>
+				<label>Ingresar Email</label>
+			</div>
+			<div class="warningS">
+				<p class="warning" id="warning-mail"></p>
+			</div>
+
+			<div class="input-field" id="input-pass">
+				<input name= "password" type="password" id="password" required><span class="barra"></span>
+				<label>Ingresar constraseña</label> 
+			</div>
+
+			<div class="warningS">
+			<p class="warning" id="warning-password"></p>
+			</div>
+
+			<div class="forget">
+				<label for="remember">
+					<input type="checkbox" id="remember">
+					<p>Recordarme</p>
+				</label>
+				<a class="forgot"  href="#">¿Olvidaste tu contraseña?</a>
+			</div>
+			<button id="lastbtn" type="submit">Log In</button>
+			<div class="register">
+				<p>¿No tiene cuenta?
+					<a href="Registrarse.html">Registrate</a>
+				</p>
+				
+			</div>
+		</form>
+		<script src="login usuario.js"></script>
+
+	</div>
+
+
+</body>
+</html>

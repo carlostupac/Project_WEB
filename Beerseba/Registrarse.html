@@ -6,11 +6,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="Registrarse.css">
+        <script language="javascript" type="text/javascript" src="Registrarse.js"></script>
         <title>Registrarse</title>
 
     </head>
 
-    <body>
+    <body id="cuerpo" onload="cargar_eventos();">
         <div class="barra-superior">
             <div class="contacto">
                 <span>+54 9 11 2338-4312</span> | 
@@ -23,43 +24,65 @@
 
         <nav>
             <div class="logo">
-                <a href="C:\Users\Vanesa\Documents\Programacion Web (2do Cuatri)\01-02 HTML y CSS\01html\Beerseba\homepage (1).html"><img src="C:\Users\Vanesa\Documents\Programacion Web (2do Cuatri)\01-02 HTML y CSS\01html\Beerseba\image-removebg-preview.png" alt="logo"></a>
+                <a href="homepage (1).html"><img src="pics\image-removebg-preview.png" alt="logo"></a>
             </div>
         </nav>
 
         <form class="box3" action="prueba.php" method="get"">
-            <h3>Inicia sesión o regístrate para comprar</h3><br>
+            <h3>Regístrate para comprar</h3><br>
 
             <label for="cor01" class="box1">Email:</label><br>
-            <input class="w3-input" type="email" placeholder="Ingresa tu email.."><br>
+            <input id="id_mail" class="w3-input"  type="email" placeholder="Ingresa tu email.."><br>
+            <p id="alerta_mail" class="anular">Por favor de ingresar un e-mail valido</p>
 
             <label for="nom01" class="box1">Nombre:</label><br>
-            <input class="w3-input" type="text" placeholder="Ingresa tu nombre.."><br>
+            <input id="id_nombre" class="w3-input" type="text" placeholder="Ingresa tu nombre.."><br>
+            <p id="alerta_nombre" class="anular">Por favor de ingresar un nombre valido</p>
 
             <label for="ape01" class="box1">Apellido:</label><br>
-            <input class="w3-input" type="text" placeholder="Ingresa tu apellido.."><br>
+            <input id="id_apellido" class="w3-input" type="text" placeholder="Ingresa tu apellido.."><br>
+            <p id="alerta_apellido" class="anular">Por favor de ingresar un apellido valido</p>
 
             <label class="box1">Tipo de documento:</label><br>
-            <select class="w3-input" class="box1" title="Seleccione...">
+            <select id="id_seleccionar" class="w3-input" class="box1" title="Seleccione...">
                 <option value="0" disabled selected>Seleccionar..</option>
                 <option value="DNI">DNI</option>
                 <option value="CARNET">Pasaporte</option>
             </select><br>
+            <p id="alerta_seleccionar" class="anular">Por favor de seleccionar una opcion valida</p>
+
 
             <label class="box1">N° de documento:</label><br>
-            <input class="w3-input" type="text" placeholder="Ingresa tu DNI.."><br>
+            <input id="id_dni" class="w3-input" type="text" placeholder="Ingresa tu DNI.."><br>
+            <p id="alerta_dni" class="anular">Por favor de ingresar un numero de documento valido</p>
 
             <label class="box1">Celular:</label><br>
-            <input class="w3-input" type="text" placeholder="Ingresa celular.."><br>
+            <input id="id_celular" class="w3-input" type="text" placeholder="Ingresa celular.."><br>
+            <p id="alerta_celular" class="anular">Por favor de ingresar un mumero celular valido</p>
 
             <label class="box1">Clave:</label><br>
-            <input class="w3-input" type="password" placeholder="Ingresa clave.."/><br>
+            <input id="id_clave" class="w3-input" type="password" placeholder="Ingresa clave.."/><br>
+            <p id="alerta_clave" class="anular">
+            La contraseña debe tener:<br>
+            -Al entre 8 y 16 caracteres<br> 
+            -Al menos un dígito<br> 
+            -Al menos una minúscula<br> 
+            -Al menos una mayúscula<br> 
+            -Al menos un caracter no alfanumérico<br>
+            </p>
 
-            <input class="box4" type="checkbox"/>
+            <input id="id_box4" class="box4" type="checkbox" value=""/>
             <label class="box4" style="color: #aaa2a2;">Acepto los términos y condiciones de "Beerseba" y autorizo la política de privacidad.</label><br><br>
+            <p id="alerta_box" class="anular"> Por favor de aceptar los terminos y condiciones</p>
 
-            <input type="submit" class="box2" value="Registrarme">
+			<div class="register"></div>
+				<p>¿Ya tiene cuenta?
+					<a href="login usuario.html">Log In</a>
+				</p>
 
+            <button type="button" id="id_button" class="box2">Registrarme</button>
         </form>
+    
+    
     </body>
 </html>

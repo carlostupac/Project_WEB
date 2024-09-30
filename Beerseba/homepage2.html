@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beerseba</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="homepage (1).css">
+       <link rel="stylesheet" href="homepage2.css">
+</head>
+<body>
+
+        <!-- Barra superior -->
+        <div class="barra-superior">
+            <div class="contacto">
+                <span>+54 9 11 2338-4312</span> | 
+                <span>beersebaonline@gmail.com</span>
+            </div>
+            <div class="mayorista">
+                VENTA MAYORISTA TALLES ESPECIALES
+            </div>
+        </div>
+    
+        <!-- Barra de navegación -->
+        <nav class="navbar">
+            <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <a href="#">INICIO</a>
+                <a href="#">PRODUCTOS</a>
+                <a href="#">CONTACTO</a>
+                <a href="#">QUIÉNES SOMOS</a>
+            </div>
+            
+            <div id="main">
+                <button class="openbtn" onclick="openNav()">☰</button>  
+    
+            <div class="logo">
+                <img src="pics\image-removebg-preview.png" alt="Beerseba Logo">
+            </div>
+            <div class="nav-extra">
+                <div class="carrito">
+                    <span class="icono-carrito"> ♡ </span>
+                </div>
+                <input type="search" placeholder="Buscar">
+                
+                <div class="profile-dropdown">
+                    <div onclick="toggle()" class="profile-dropdown-btn">
+                      <div class="profile-img">
+                        <i class="fa-solid fa-circle"></i>
+                      </div>
+            
+                      <span
+                        >Victoria
+                        <i class="fa-solid fa-angle-down"></i>
+                      </span>
+                    </div>
+            
+                    <ul class="profile-dropdown-list">
+                      <li class="profile-dropdown-list-item">
+                        <a href="#">
+                          <i class="fa-regular fa-user"></i>
+                          Editar Perfil
+                        </a>
+                      </li> 
+
+                      <li class="profile-dropdown-list-item">
+                        <a href="favoritos.html">
+                          <i class="fas fa-heart"></i>
+                          Favoritos
+                        </a>
+                      </li>
+            
+                      <li class="profile-dropdown-list-item">
+                        <a href="#">
+                          <i class="fa-solid fa-chart-line"></i>
+                          Mis Compras
+                        </a>
+                      </li>
+            
+                      <li class="profile-dropdown-list-item">
+                        <a href="#">
+                          <i class="fa-regular fa-circle-question"></i>
+                          Help & Support
+                        </a>
+                      </li>
+                      <hr />
+            
+                      <li class="profile-dropdown-list-item">
+                        <a href="homepage (1).html">
+                          <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                          Log out
+                        </a>
+                      </li>
+                    </ul>
+                  </div>           
+                   
+    
+        </nav>
+        <script src="homepage2.js"></script>
+    
+        <!-- Banner principal -->
+
+        <section class="banner">
+            <div class="texto-banner">
+                <h2>Spring <br>NEW COLLECTION</h2>
+                <p>EL VERDADERO PODER VIENE DE ADENTRO</p>
+            </div>
+            <div class="imagenes-banner">
+                <img src="pics\conjunto verde.jpg" alt="Conjunto Sastrero Verde">
+                <img src="pics\Campera de Morley .jpg" alt="CAmpera de Morley">
+            </div>
+            <div class="colores">
+                <!-- Paleta de colores -->
+                <div class="color" style="background-color: #DDBF98;"></div>
+                <div class="color" style="background-color: #E8D0A9;"></div>
+                <div class="color" style="background-color: #B88C68;"></div>
+                <div class="color" style="background-color: #C4733C;"></div>
+                <div class="color" style="background-color: #C3D977;"></div>
+            </div>
+        </section>
+    
+    
+        <!-- Lista de productos -->
+        <section class="productos">
+            <h2>Productos Disponibles</h2>
+            <div class="productos-grid">
+                <div class="producto">
+                    <img src="pics\Recto de Bengalina .jpg" alt="Recto de Bengalina Negro">
+                    <h3>Recto de Bengalina</h3>
+                    <p>$12.500,00</p>
+                </div>
+                <div class="producto">
+                    <a href="detalle.html"><img src="pics\cute.jpg" alt="Jogger de Bengalina Café"></a>
+                    <h3>Jogger de Bengalina</h3>
+                    <p>$13.200,00</p>
+                </div>
+                <div class="producto">
+                    <img src="pics\Pantalon Cuerina.jpg" alt="Pantalon de Cuerina Negro">
+                    <h3>Pantalon de Cuerina</h3>
+                    <p>$14.150,00</p>
+                </div>
+                <div class="producto">
+                    <img src="pics\estampada.JPG" alt="Blusa Estampada Flores en tonos naranjas y amarillos">
+                    <h3>Blusa Estampada</h3>
+                    <p>$14.150,00</p>
+                </div>
+                <div class="producto">
+                    <img src="pics\Saco Barbie.jpg" alt="Saco Fucsia Brilloso">
+                    <h3>Saco Brilloso</h3>
+                    <p>$14.150,00</p>
+                </div>
+                <!-- Añade más productos según sea necesario -->
+            </div>
+        </section>
+    
+    
+    
+    </body>
+    </html>
+    

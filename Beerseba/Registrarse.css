@@ -1,3 +1,8 @@
+*{
+    box-sizing: border-box; 
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 body {
     background-color:#ededed;
     margin: 0%;
@@ -43,6 +48,7 @@ nav {
     border-radius: 20px;
     font-weight: bold;
     height: 35px;
+    text-align: center;
 
 }
 .box3 {
@@ -59,14 +65,28 @@ nav {
     font-size: small;
     
 }
+
+
 h3 {
     font-weight: bold;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 p {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-top: 5px;
+    font-size: 15px;
+    font-weight: 250;
+    margin-top: 2px;
     margin-left: 5px;
+    margin-bottom: 25px;
+    color: #000000;
+}
+
+.register{
+	text-align: center;
+	color: #aaa2a2;
+
+}
+
+.prueba{
+    background-color: #FF5E62;
 }
 
 @media screen and (max-width: 600px) {
@@ -84,3 +104,9 @@ p {
     }
 }
 
+.anular{
+    display: none !important;
+}
+.aparecer{
+    color: red;
+}
